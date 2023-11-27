@@ -1,0 +1,205 @@
+
+/*------------------Generelt-----------------*/
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 3.7rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+ 
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  
+
+
+/*************** Reset *********************/
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Karma", serif;
+    font-size: 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /*************** Fonts *********************/
+  
+  @font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);}
+    @font-face {
+        font-family: Roboto;
+        src: url(../fonts/Roboto-Italic.ttf);}
+
+  /*************** Farver *********************/
+  
+  .color1 {
+    color:darkolivegreen ;
+  }
+  .color2 {
+    color:whitesmoke;
+  }
+  .color3 {
+    color:lightgreen
+  }
+  .color4 {
+    color:#1e1e1e;
+  }
+  .color5 {
+    color:tan;
+  }
+  
+  .bg_color1 {
+    background-color: whitesmoke;
+  }
+
+  
+  /*************** Menu *********************/
+  
+  header {
+   
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    padding: 1rem 2rem;
+    position: sticky;
+    align-items: baseline;
+    background-color: darkolivegreen;
+  }
+
+
+
+@media screen and (max-width: 700px) {
+nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: tan;
+        z-index: 1;
+       
+    }
+
+}
+
+  /*************** Overskrifter *********************/
+  h1 {
+    color: olivedrab;
+    font-size: 2.5rem;
+    font-weight: bolder; 
+    text-align: center;
+    background-color: bisque;
+  }
+  
+  h2 {
+    color: darkolivegreen;
+    padding: 1px;
+    padding: 0.6rem 0rem 0.6rem 0rem;
+    margin: 10px;
+  }
+  
+  h3 {
+    color: tan;
+    margin: 2px;
+  }
+  
+  /*************** Design *****************/
+  
+  body {
+    background-color: wheat;
+    background-image: url(../img/lasse_cykel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+ 
+  p {
+    margin-bottom: 1rem;
+    color: black;
+    margin: 20px;
+    background-color: aliceblue;
+
+  }
+  
+  
+  ul {
+    list-style: none;
+    margin: 10px;
+  }
+
+  li {color: #fff;}
+  
+  
+  nav a {
+    color: whitesmoke; 
+    text-decoration: none;
+    padding: 10px; 
+  }
+  
+  nav a:hover {
+    background-color: tan;
+    color: whitesmoke; 
+  }
+
+  .nav {
+    color: whitesmoke;
+  }
+  
+  footer {
+    margin: 0rem;
+    padding-inline: 1rem;
+    text-align: right;
+    background-color: whitesmoke;
+    margin-top: 40px;
+  }
+  
+  .footer {
+    color:#1e1e1e;
+    font-style: roboto;
+  }
+  
+  @media (max-width: 700px) {
+  }
+
+  
+
+/*forside*/
+
+.forsidetifo { 
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+/*film*/
+
+#film{
+    position: absolute;
+    width: 40%;
+    left: 5%;
+}
+
+#youtube{
+    position: absolute;
+    width: 42%;
+    right: 5%;
+}
